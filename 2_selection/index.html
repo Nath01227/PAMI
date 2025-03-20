@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Ferrari</button>
+    <button onclick="addVeiculo3()">Adicionar McLaren</button>
+    <button onclick="addVeiculo4()">Adicionar Mercedes</button>
+
+   <div id="estacionamento"></div>
+
+    <script>
+        function addVeiculo1(){
+
+            let veiculo_1 = document.createElement('h1');
+            veiculo_1.innerText = 'Fusca';
+            veiculo_1.style.color = 'white';
+            veiculo_1.style.backgroundColor = 'lightblue'
+            veiculo_1.style.fontSize = '28px';
+            veiculo_1.style.fontFamily = 'Helvetica';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://cdn.awsli.com.br/600x450/2437/2437567/produto/253064544/dmc6513_a--1--yvjvem6kbx.jpg');
+    
+            document.querySelector('#estacionamento').appendChild(veiculo_1);
+            document.querySelector('#estacionamento').appendChild(imagem);
+        }
+        function addVeiculo2(){
+
+            let veiculo_2 = document.createElement('h1');
+            veiculo_2.innerText = 'Ferrari';
+            veiculo_2.style.color = 'white';
+            veiculo_2.style.backgroundColor = 'red'
+            veiculo_2.style.fontSize = '28px';
+            veiculo_2.style.fontFamily = 'Helvetica';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://www.minimundi.com.br/cdn/imagens/produtos/det/68647.jpg');
+
+
+            document.querySelector('#estacionamento').appendChild(veiculo_2);
+            document.querySelector('#estacionamento').appendChild(imagem);
+        }
+        function addVeiculo3(){
+
+            let veiculo_3 = document.createElement('h1');
+            veiculo_3.innerText = 'McLaren';
+            veiculo_3.style.color = 'white';
+            veiculo_3.style.backgroundColor = 'purple'
+            veiculo_3.style.fontSize = '28px';
+            veiculo_3.style.fontFamily = 'Helvetica';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://http2.mlstatic.com/D_NQ_NP_844945-MLB76905281212_062024-O.webp');
+
+    
+            document.querySelector('#estacionamento').appendChild(veiculo_3);
+            document.querySelector('#estacionamento').appendChild(imagem);
+        }
+        function addVeiculo4(){
+
+            let veiculo_4 = document.createElement('h1');
+            veiculo_4.innerText = 'Mercedes';
+            veiculo_4.style.color = 'white';
+            veiculo_4.style.backgroundColor = 'gray'
+            veiculo_4.style.fontSize = '28px';
+            veiculo_4.style.fontFamily = 'Helvetica';
+
+            let imagem = document.createElement('img');
+            imagem.setAttribute('src', 'https://www.minimundi.com.br/cdn/imagens/produtos/det/miniatura-carro-mercedes-benz-amg-gtr-2021-cinza-1-18-minichamps-155036026.jpg');
+    
+            document.querySelector('#estacionamento').appendChild(veiculo_4);
+            document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+    </script>
+
+</body>
+</html>
