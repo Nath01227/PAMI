@@ -1,0 +1,27 @@
+<script>
+    const veiculos = [
+  { nomeVeiculo: "Fiat Uno", ano: 2010, preco: 18000, modelo: "Economy", tipoCombustivel: "Gasolina" },
+  { nomeVeiculo: "Volkswagen Gol", ano: 2015, preco: 25000, modelo: "Trendline", tipoCombustivel: "Flex" },
+  { nomeVeiculo: "Chevrolet Onix", ano: 2020, preco: 55000, modelo: "LT", tipoCombustivel: "Flex" },
+  { nomeVeiculo: "Ford Ka", ano: 2018, preco: 37000, modelo: "SE", tipoCombustivel: "Gasolina" },
+  { nomeVeiculo: "Hyundai HB20", ano: 2019, preco: 52000, modelo: "Comfort Plus", tipoCombustivel: "Flex" },
+  { nomeVeiculo: "Toyota Corolla", ano: 2025, preco: 105000, modelo: "XEi", tipoCombustivel: "Híbrido" },
+  { nomeVeiculo: "Honda Civic", ano: 2017, preco: 79000, modelo: "EX", tipoCombustivel: "Gasolina" },
+  { nomeVeiculo: "Renault Kwid", ano: 2022, preco: 47000, modelo: "Zen", tipoCombustivel: "Flex" },
+  { nomeVeiculo: "Nissan Versa", ano: 2020, preco: 62000, modelo: "Advance", tipoCombustivel: "Flex" },
+  { nomeVeiculo: "Jeep Renegade", ano: 2021, preco: 98000, modelo: "Longitude", tipoCombustivel: "Diesel" }
+];
+
+let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano <= 2024);
+let veiculo_novos = veiculos.filter(veiculo => veiculo.ano >= 2025);
+
+
+
+
+
+
+
+console.log(veiculos_seminovos);
+console.log(veiculos_novos);
+console.log(veiculos_classicos);
+</script>
